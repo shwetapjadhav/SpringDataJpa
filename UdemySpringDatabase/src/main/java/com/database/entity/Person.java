@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
 @Entity
-@NamedQuery(name="find_all_persons", query="select p from Person p")
 public class Person {
 
 	@Id
@@ -21,13 +20,6 @@ public class Person {
 	
 	public Person() {
 		
-	}
-	
-	public Person(int id, String name, String location, Date birth_date) {
-		this.id = id;
-		this.name = name;
-		this.location = location;
-		this.birth_date = birth_date;
 	}
 	
 	public Person(String name, String location, Date birth_date) {
